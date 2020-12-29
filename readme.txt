@@ -64,6 +64,85 @@ With this extension you can add product publishers to your WooCommerce site.
 2. Activate the plugin through the 'Plugins' menu in WordPress.
 
 
+== Shortcodes ==
+
+These are the current shortcodes available to use in posts or pages.
+
+------- Display publishers carousel -------
+
+Enables a slider carousel including all publishers
+
+[ewp-carousel items="10" items_to_show="5" items_to_scroll="1" image_size="thumbnail" autoplay="true"]
+
+Parameters:
+
+    “items” [int / featured] Total number of publishers
+    “items_to_show” [int] Number of publishers per page
+    “items_to_scroll” [int] Number of publishers to scroll each time
+    “image_size” [thumbnail / medium / large / full / custom size] Author image size
+    “autoplay” [true / false] Carousel autoplay
+    “arrows” [true / false] Show or not the navigation arrows
+    “hide_empty” [true / false] It hides publishers that have no products associated
+
+------- Display product carousel by publisher -------
+
+Displays a carousel slider including all products of a specified publisher
+
+[ewp-product-carousel publisher="all" products="10" products_to_show="5" products_to_scroll="1" autoplay="true"]
+
+Parameters:
+
+    “publisher” [all / publisher slug]
+    “products” [int] Total number of products
+    “products_to_show” [int] Number of products per page
+    “products_to_scroll” [int] Number of products to scroll each time
+    “autoplay” [true / false] Carousel autoplay
+    “arrows” [true / false] Show or not the navigation arrows
+
+------- Products of specific publishers -------
+
+Shows shop products that are associated to one or more publishers. This shortcode extends the default products shortcode.
+
+[products publishers="publisher-slug"]
+
+Parameters:
+
+    “publishers” [comma separated publisher slugs] Show products associated with these publishers
+    Inherited params from the WooCommerce [products] shortcode
+
+------- All Authors -------
+
+A paginated list of all publishers and their logos
+
+[ewp-all-publishers per_page="10" image_size="thumbnail" hide_empty="true" order_by="name" order="ASC" title_position="before"]
+
+Parameters:
+
+    “title_position” [before/ after / none]
+
+Here you can have a look at this shortcode in action.
+
+------- A-Z Listing -------
+
+Order all publishers alphabetically in a list
+
+[ewp-az-listing]
+
+Have a look at this shortcode here.
+Display publishers of a specific product
+
+It allows you to display publishers of a specific product. If "product_id" is empty the shortcode will try to get this value by itself.
+
+[ewp-publisher product_id="5" image_size="thumbnail"]
+
+Parameters:
+
+    “product_id” [int / empty] Show publishers for this product
+    “as_link” [true / false] Show publisher image or a text link
+    “image_size” [thumbnail / medium / large / full / custom size] Author image size
+
+
+
 == Frequently Asked Questions ==
 = Is Everexpert WooCommerce Publishers free? =
 Yes, of course. This plugin is 100% free. No ads, no premium version exists.
