@@ -79,7 +79,7 @@ Parameters:
     “items” [int / featured] Total number of publishers
     “items_to_show” [int] Number of publishers per page
     “items_to_scroll” [int] Number of publishers to scroll each time
-    “image_size” [thumbnail / medium / large / full / custom size] Author image size
+    “image_size” [thumbnail / medium / large / full / custom size] Publisher image size
     “autoplay” [true / false] Carousel autoplay
     “arrows” [true / false] Show or not the navigation arrows
     “hide_empty” [true / false] It hides publishers that have no products associated
@@ -110,7 +110,7 @@ Parameters:
     “publishers” [comma separated publisher slugs] Show products associated with these publishers
     Inherited params from the WooCommerce [products] shortcode
 
-------- All Authors -------
+------- All Publishers -------
 
 A paginated list of all publishers and their logos
 
@@ -139,7 +139,7 @@ Parameters:
 
     “product_id” [int / empty] Show publishers for this product
     “as_link” [true / false] Show publisher image or a text link
-    “image_size” [thumbnail / medium / large / full / custom size] Author image size
+    “image_size” [thumbnail / medium / large / full / custom size] Publisher image size
 
 
 
